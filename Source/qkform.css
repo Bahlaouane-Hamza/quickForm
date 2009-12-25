@@ -1,3 +1,25 @@
+/*
+---
+description:     qkForm
+
+authors:
+  - Hamza Bahlaouane (http://quick2ouch.com)
+
+license:
+  - MIT-style license
+  
+Version: 
+	0.1
+	
+requires:
+  core/1.2.4:   '*'
+
+provides: [qkForm]
+
+...
+*/
+
+
 form.qkFormdone label{
 	margin-top:4px;
 	margin-right: 8px;
