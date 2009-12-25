@@ -1,23 +1,21 @@
 /*
 ---
-description:     qkForm
+description: qkForm
+
+license: MIT-style
 
 authors:
-  - Hamza Bahlaouane (http://quick2ouch.com)
+- Hamza Bahlaouane (http://quick2ouch.com)
 
-license:
-  - MIT-style license
-  
-Version: 
-	1.0
-	
 requires:
-  core/1.2.4:   '*'
+- core/1.2.4:   '*'
 
-provides:
-  - qkForm
+provides: [QuickForm]
+
 ...
 */
+
+
 
 	var QuickForm = new Class({
 		Implements: Options,
@@ -111,10 +109,12 @@ provides:
 				
 				myDiv.addEvents({
 					'mouseover': function(){
+						if(textarea.get('html') == "") textarea.set('html','&nbsp;'); 
 						myDiv.getElement('table').addClass('qkFormTextarea-hover');
 					},
 					'mouseleave': function(){
-            			myDiv.getElement('table').removeClass('qkFormTextarea-hover');
+						if(textarea.get('html') == "") textarea.set('html','&nbsp;'); 
+            						myDiv.getElement('table').removeClass('qkFormTextarea-hover');
 					}
 				});
 				
