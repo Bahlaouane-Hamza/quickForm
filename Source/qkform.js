@@ -1,23 +1,21 @@
 /*
 ---
-description:     qkForm
+description: qkForm
+
+license: MIT-style
 
 authors:
-  - Hamza Bahlaouane (http://quick2ouch.com)
+- Hamza Bahlaouane (http://quick2ouch.com)
 
-license:
-  - MIT-style license
-  
-Version: 
-	0.1
-	
 requires:
-  core/1.2.4:   '*'
+- core/1.2.4:   '*'
 
-provides: [qkForm]
+provides: [QuickForm]
 
 ...
 */
+
+
 
 	var QuickForm = new Class({
 		Implements: Options,
