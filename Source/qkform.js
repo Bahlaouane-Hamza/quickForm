@@ -9,13 +9,13 @@ license:
   - MIT-style license
   
 Version: 
-	1.0
+	0.1
 	
 requires:
   core/1.2.4:   '*'
 
-provides:
-  - qkForm
+provides: [qkForm]
+
 ...
 */
 
