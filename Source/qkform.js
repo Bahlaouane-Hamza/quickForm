@@ -109,10 +109,12 @@ provides: [QuickForm]
 				
 				myDiv.addEvents({
 					'mouseover': function(){
+						if(textarea.get('html') == "") textarea.set('html','&nbsp;'); 
 						myDiv.getElement('table').addClass('qkFormTextarea-hover');
 					},
 					'mouseleave': function(){
-            			myDiv.getElement('table').removeClass('qkFormTextarea-hover');
+						if(textarea.get('html') == "") textarea.set('html','&nbsp;'); 
+            						myDiv.getElement('table').removeClass('qkFormTextarea-hover');
 					}
 				});
 				
