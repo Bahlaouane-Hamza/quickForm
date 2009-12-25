@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+
+	<link rel="stylesheet" href="qkform.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="demo/demo.css" type="text/css" media="all" />
+
+
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js"></script>
+	<script type="text/javascript" src="qkform.js"></script>
+	
+	<script type="text/javascript">
+		window.addEvent('domready', function() {			
+			var MyForm = new QuickForm('contact-form');
+		});	
+	</script>
+
+</head>
+<body>
+
+<div id="form-container">
+
+    <form id="contact-form" name="contact-form" method="post" action="submit.php">
+
+      <ul class="form-container">
+
+        <li>
+          <label for="name">Input Text</label>
+          <div class="right">
+			<input type="text" name="name" id="name" value="" />
+
+          </div>
+        </li>
+        
+
+   
+        <li>
+          <label>Checkbox</label>
+          <div class="right">
+			 <input type="checkbox" name="checkbox" value="0" /> <label>INLINE BOX</label>
+			 <input type="checkbox" name="checkbox" value="1" checked="checked" /> <label>INLINE BOX</label>
+			<br style="clear:both" />
+			  <input type="checkbox" name="checkbox" value="2" /> <label>BOX</label><br style="clear:both" />
+			 <input type="checkbox" name="checkbox" value="3" /> <label>BOX</label>
+          </div>
+        </li>		
+			      
+        
+		
+        <li>
+          <label>Radio</label>
+          <div class="right">
+			 <input type="radio" name="radio" value="0" /> <label>INLINE RADIO</label>
+			 <input type="radio" name="radio" value="1" checked="checked" /> <label>INLINE RADIO</label>
+			<br style="clear:both" />
+			  <input type="radio" name="radio" value="2" /> <label>RADIO</label><br style="clear:both" />
+			 <input type="radio" name="radio" value="3" /> <label>RADIO</label>
+          </div>
+        </li>		
+			
+		
+        <li>
+          <label for="subject">Select</label>
+          <div class="right">
+
+              <select name="subject" id="subject">
+
+    
+                <option value=""> - Choose -</option>
+
+                <option value="Question">Question</option>
+                <option value="Business proposal" selected="selected">Business proposal</option>
+                <option value="Advertisement">Advertising</option>
+                <option value="Quote Request">Request a Quote</option>
+
+              </select> 
+           </div>                   
+        </li>
+        
+        <li>
+          <label for="message">Textarea</label>
+          <div class="right">
+          	<textarea name="message" id="message" cols="35" rows="5"></textarea>
+
+          </div>
+        </li>
+
+        <li>
+		  <label for="captcha">10 + 20 =</label>
+          <div class="right">
+          	<input type="text" name="captcha" id="captcha" size="5" />
+          </div>
+        </li>
+
+        <li class="rem">
+          <label for="subject">Select</label>
+          <div class="right">
+
+              <select name="wsubject" id="wsubject">
+			  
+                <option value="" selected="selected"> - Choose -</option>
+                <option value="Q5">Option</option>
+                <option value="4">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="1">Option 3</option>
+
+              </select> 
+           </div>                   
+        </li>
+
+	
+		
+		
+<p>&nbsp; </p>
+        
+        <li>
+          <label>&nbsp;</label>
+
+          <div class="right">
+              <input type="submit" name="button" id="button" value="Submit" />
+              <input type="reset" name="button2" id="button2" value="Reset" />
+
+          
+          </div>
+        </li>
+      </ul>
+      </form>
+</div>
+
+
+</body>
+</html>
