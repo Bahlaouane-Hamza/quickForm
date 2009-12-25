@@ -1,0 +1,359 @@
+form.qkFormdone label{
+	margin-top:4px;
+	margin-right: 8px;
+	display: block;
+	float:left;
+}
+form.qkFormdone div.rowElem{
+	clear:both;
+	padding:4px 0px;
+}
+
+
+/* -------------
+ * Buttons
+ * ------------- */
+button.qkFormButton {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	overflow: visible;
+	font-family: Arial;
+}
+
+*:first-child+html button.qkFormButton[type]{width: 1;} /* IE7 */
+
+button.qkFormButton span {
+	background: transparent url(img/btn_right.gif) no-repeat scroll right top;
+	display: block;
+	float: left;
+	padding: 0px 4px 0px 0px; /* sliding doors padding */
+	margin: 0px;
+	height: 33px;
+}
+
+button.qkFormButton span span {
+	background: transparent url(img/btn_left.gif) no-repeat;
+	color: #333;
+	padding: 8px 4px 0px 8px;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 13px;
+	display: block;
+	text-decoration: none;
+	height: 33px;
+}
+
+/*hover*/
+button.qkFormButton_hover span span { background-position: left -33px ; }
+button.qkFormButton_hover span { background-position: right -33px ; }
+
+/*clicked*/
+button.qkFormButton_click span span { background-position: left -66px ; }
+button.qkFormButton_click span { background-position: right -66px ; }
+
+/* IE 6 */
+* html button.qkFormButton { height:33px; }
+* button.qkFormButton span span { height: 25px; }
+/* IE 7 */
+*+ html button.qkFormButton { height:33px; }
+*+ button.qkFormButton span span { height: 25px; }
+
+
+
+/* -------------
+ * Inputs
+ * ------------- */
+.qkFormInputWrapper {
+	background: transparent url(img/input_left.gif) no-repeat left top;
+	height: 31px;
+	padding: 0px;
+	float:left;
+}
+
+.qkFormInputInner {
+	background: transparent url(img/input_right.gif) no-repeat right top;
+	padding: 2px 4px 2px 0px;
+	margin: 0px 0px 0px 4px;
+}
+
+.qkFormInputInner div {
+	height: 31px;
+}
+
+.qkFormInputInner input {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height: 18px;
+	vertical-align: middle;
+	height: 31px;
+	color:#404040;	
+	border: none;
+	padding: 5px 0 0 0;
+	margin: 0 0 0 0;
+	background:transparent;
+}
+
+
+/*  IE6 */
+
+* html .qkFormInputInner input {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	line-height: 18px;
+	vertical-align: middle;
+	height: 31px;
+	color:#404040;	
+	border: 0;
+	padding: 2px 0 0 0;
+	margin: 0 0 0 0;
+	background:transparent;
+}
+
+
+/*hover*/
+.qkFormInputWrapper_hover{ background: transparent url(img/input_left-hover.gif) no-repeat left top;}
+.qkFormInputWrapper_hover div{}
+.qkFormInputWrapper_hover div.qkFormInputInner{ background: transparent url(img/input_right-hover.gif) no-repeat right top;}
+
+/*focus*/
+.qkFormInputWrapper_focus{ background: transparent url(img/input_left-focus.gif) no-repeat left top;}
+.qkFormInputWrapper_focus div{}
+.qkFormInputWrapper_focus div.qkFormInputInner{ background: transparent url(img/input_right-focus.gif) no-repeat right top;}
+
+
+
+.qkFormSafari .qkFormInputInner div {
+	position: relative;
+	overflow: hidden;
+}
+.qkFormSafari input {
+	background-color: none;
+	position: absolute;
+	top: -10px;
+	left: -2px;
+	height: 42px; 
+	padding-left: 4px;
+}
+
+
+
+/* -------------
+ * Textarea
+ * ------------- */
+table.qkFormTextarea td{
+font-size: 1px;
+line-height: 1px;
+width: 5px;
+height: 5px;
+margin: 0;
+padding: 0;
+}
+
+table.qkFormTextarea tr{
+/*border: 1px solid red;*/
+
+}
+table.qkFormTextarea textarea{
+margin: 0;
+padding: 0;
+border: 0;
+background: none;
+}
+table.qkFormTextarea td#qkFormTextarea-tl{
+background: url(img/textarea-tl.gif) no-repeat bottom left;
+}
+table.qkFormTextarea td#qkFormTextarea-tm{
+background: url(img/textarea-tm.gif) repeat-x bottom left;
+}
+table.qkFormTextarea td#qkFormTextarea-tr{
+background: url(img/textarea-tr.gif) no-repeat bottom left;
+
+}
+table.qkFormTextarea td#qkFormTextarea-ml{
+background: url(img/textarea-ml.gif) repeat-y top left;
+}
+table.qkFormTextarea td#qkFormTextarea-mm{
+background: url(img/textarea-mm.gif) repeat top left;
+}
+table.qkFormTextarea td#qkFormTextarea-mm textarea{
+font-size: 12px;
+line-height: 16px;
+}
+
+
+
+
+table.qkFormTextarea td#qkFormTextarea-mr{
+background: url(img/textarea-mr.gif) repeat-y top left;
+}
+table.qkFormTextarea td#qkFormTextarea-bl{
+background: url(img/textarea-bl.gif) no-repeat top left;
+}
+table.qkFormTextarea td#qkFormTextarea-bm{
+background: url(img/textarea-bm.gif) repeat-x top left;
+}
+table.qkFormTextarea td#qkFormTextarea-br{
+background: url(img/textarea-br.gif) no-repeat top left;
+}
+/*hover*/
+table.qkFormTextarea-hover td#qkFormTextarea-tl{background-image: url(img/textarea-tl-hover.gif);}
+table.qkFormTextarea-hover td#qkFormTextarea-tm{background-image: url(img/textarea-tm-hover.gif);}
+table.qkFormTextarea-hover td#qkFormTextarea-tr{background-image: url(img/textarea-tr-hover.gif);}
+table.qkFormTextarea-hover td#qkFormTextarea-ml{background-image: url(img/textarea-ml-hover.gif);}
+table.qkFormTextarea-hover td#qkFormTextarea-mm{background-image: url(img/textarea-mm-hover.gif);}
+table.qkFormTextarea-hover td#qkFormTextarea-mr{background-image: url(img/textarea-mr-hover.gif);}
+table.qkFormTextarea-hover td#qkFormTextarea-bl{background-image: url(img/textarea-bl-hover.gif);}
+table.qkFormTextarea-hover td#qkFormTextarea-bm{background-image: url(img/textarea-bm-hover.gif);}
+table.qkFormTextarea-hover td#qkFormTextarea-br{background-image: url(img/textarea-br-hover.gif);}
+/*focus*/
+table.qkFormTextarea-focus td#qkFormTextarea-tl{background-image: url(img/textarea-tl-focus.gif);}
+table.qkFormTextarea-focus td#qkFormTextarea-tm{background-image: url(img/textarea-tm-focus.gif);}
+table.qkFormTextarea-focus td#qkFormTextarea-tr{background-image: url(img/textarea-tr-focus.gif);}
+table.qkFormTextarea-focus td#qkFormTextarea-ml{background-image: url(img/textarea-ml-focus.gif);}
+table.qkFormTextarea-focus td#qkFormTextarea-mm{background-image: url(img/textarea-mm-focus.gif);}
+table.qkFormTextarea-focus td#qkFormTextarea-mr{background-image: url(img/textarea-mr-focus.gif);}
+table.qkFormTextarea-focus td#qkFormTextarea-bl{background-image: url(img/textarea-bl-focus.gif);}
+table.qkFormTextarea-focus td#qkFormTextarea-bm{background-image: url(img/textarea-bm-focus.gif);}
+table.qkFormTextarea-focus td#qkFormTextarea-br{background-image: url(img/textarea-br-focus.gif);}
+
+
+table.qkFormTextarea .qkFormSafariTextarea div {
+	position: relative;
+	overflow: hidden;
+	border: 0px solid red;
+}
+table.qkFormTextarea .qkFormSafariTextarea textarea{
+	background: none;
+	position: absolute;
+	top:-10px;
+	left:-10px;
+	padding: 10px 10px 10px 10px;
+	resize: none;
+}
+
+
+/* -------------
+ * Radios
+ * ------------- */
+.qkFormRadioWrapper {float: left;display:block;margin:0px 4px;	margin-top:5px;}
+.qkFormRadio {
+	background: transparent url(img/radio.gif) no-repeat center top;
+	vertical-align: middle;
+	height: 19px;
+	width: 18px;
+	display:block;/*display: -moz-inline-block;*/
+}
+
+
+/* -------------
+ * Checkboxes
+ * ------------- */
+span.qkFormCheckboxWrapper{
+	display:block;
+	float:left;
+	margin-top:5px;
+}
+a.qkFormCheckbox {
+	background: transparent url(img/checkbox.gif) no-repeat center top;
+	vertical-align: middle;
+	height: 19px;
+	width: 18px;
+	display:block;/*display: -moz-inline-block;*/
+}
+a.qkFormCheckbox span{
+	padding-left:19px;
+}
+/* -------------
+ * Checked - Used for both Radio and Checkbox
+ * ------------- */
+a.qkFormChecked { background-position: center bottom;}
+
+
+/* -------------
+ * Selects
+ * ------------- */
+.qkFormSelectWrapper {
+	width: 45px;
+	position:relative;
+	height: 31px;
+	background: url(img/select_left.gif) no-repeat top left;
+	float:left;
+}
+
+.qkFormSelectWrapper div span {
+	
+	font-size: 12px;
+	float: none;
+	position: absolute;
+	width: 14px;
+	height: 31px;
+	line-height: 15px;
+	padding: 8px 0 0 7px;
+	overflow: hidden;
+	cursor:pointer;
+	/*border: 1px solid #CCCCCC;*/
+/*	border-right: none;*/
+}
+
+.qkFormSelectWrapper  a.qkFormSelectOpen {
+	display: block;
+	position: absolute;
+	right: 0px;
+	width: 31px;
+	height: 31px;
+	background: url(img/select_right.gif) no-repeat center center;
+}
+
+.qkFormSelectWrapper ul {
+	position: absolute;
+	width: 43px;
+	top: 30px;
+	left: 0px;
+	list-style: none;
+	background-color: #FFF;
+	border: solid 1px #CCC;
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	height: 150px;
+	overflow: auto;
+	overflow-y: auto;
+	z-index:10;
+}
+
+.qkFormSelectWrapper ul a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color:#333;
+	background-color: #FFF;
+	font-size: 12px;
+	cursor:pointer
+}
+
+.qkFormSelectWrapper ul a.selected {
+	background: #EDEDED;
+	color: #333;
+}
+/*
+.qkFormSelectWrapper ul a:hover, .qkFormSelectWrapper ul a.selected:hover {
+	background:#3582c4;
+	color: #fff;
+}
+*/
+.qkFormSelectWrapper a.defaut, .qkFormSelectWrapper a.defaut {
+	background-color: #FFF;
+	color:#333;
+}
+.qkFormSelectWrapper a.hover, .qkFormSelectWrapper a.hover {
+	background:#3582c4;
+	color: #fff;
+}
+
+/* -------------
+ * Hidden - used to hide the original form elements
+ * ------------- */
+.qkFormHidden {display: none;}
