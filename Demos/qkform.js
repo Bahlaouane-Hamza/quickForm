@@ -285,7 +285,8 @@ provides: [QuickForm]
 		
 		parseSelects:function(){
 			this.getSelects.each(function($select,index){
-				
+
+				var $form = this.formContainerId;
 				var $getSize = $select.getSize();
 				var anchorMax = 1;
 				var $hideAllMenusTimeout = null;
@@ -345,7 +346,8 @@ provides: [QuickForm]
 							if(myDiv.getElement('a.selected')) myDiv.getElement('a.selected').removeClass('selected');
 							iti.addClass('selected');
 							if ($select[0].selectedIndex != iti.get('index') && $select[0].onchange) { $select[0].selectedIndex = iti.get('index'); $select[0].onchange(); }
-							$select[0].selectedIndex = iti.get('index');
+							$form.elements[$select.getProperty('name')].selectedIndex  = iti.get('index');
+							/*$select[0].selectedIndex = iti.get('index');*/
 				
 							// $firstSpan.set('text',iti.get('html')); // error on ie7 when using html method
 							mySpan.set('text',iti.get('html'));
